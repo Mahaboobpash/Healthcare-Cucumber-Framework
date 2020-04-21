@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/LoginFunctionality.feature",
 					glue= {"stepDefnitions"},
-					dryRun=true,//mapping each and every step in feature file to step definition file
+					dryRun=false,//mapping each and every step in feature file to step definition file
 					monochrome=true,//readable output in console
 					plugin= {"pretty","de.monochromata.cucumber.report.PrettyReports:reports/cucumber"},
 				    tags= {"@Flipkart"}
